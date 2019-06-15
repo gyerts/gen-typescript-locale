@@ -12,7 +12,6 @@
   "author": "Yuriy Gyerts",
   "license": "MIT",
   "dependencies": {
-    "fs": "0.0.1-security",
     "recursive-readdir": "^2.2.2"
   },
   "devDependencies": {
