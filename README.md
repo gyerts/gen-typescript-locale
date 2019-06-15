@@ -31,6 +31,12 @@ if (language) {
    dict = require('./translates/english').dict;
 }
 
+type LanguageType = 'english'|'russian';
+export const setLanguage = (language: LanguageType) => {
+   localStorage.setItem('language', language);
+   window.location.reload();
+};
+
 export const _ = (phrase: IPhraseType, replacers: Object = {}): string => {
    let foundPhrase: string = dict[phrase];
 
