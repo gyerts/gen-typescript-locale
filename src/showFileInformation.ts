@@ -16,7 +16,7 @@ export const showFileInformation = (filePath: string, phrases: string[], fileCon
       }
    });
 
-   redundantLines.length && absentLines.length && console.warn(`\n\n[ISSUES] ${filePath}:`);
+   (redundantLines.length || absentLines.length) && console.warn(`\n\n[ISSUES] ${filePath}:`);
    redundantLines.length && console.log('   Redundant lines');
    redundantLines.map(redundantLine => {
       console.log(`    - ${redundantLine}`);
