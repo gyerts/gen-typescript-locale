@@ -14,7 +14,7 @@ exports.showFileInformation = function (filePath, phrases, fileContentDict) {
             absentLines.push(key);
         }
     });
-    redundantLines.length && absentLines.length && console.warn("\n\n[ISSUES] " + filePath + ":");
+    (redundantLines.length || absentLines.length) && console.warn("\n\n[ISSUES] " + filePath + ":");
     redundantLines.length && console.log('   Redundant lines');
     redundantLines.map(function (redundantLine) {
         console.log("    - " + redundantLine);
