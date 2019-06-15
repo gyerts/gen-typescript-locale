@@ -10,6 +10,9 @@ exports.readDictFromFile = function (filePath) {
     var fileContent = fs_1.default.readFileSync(filePath);
     var startPoint = fileContent.indexOf(startPointLiteral) + startPointLiteral.length;
     var endPoint = fileContent.indexOf(endPointLiteral);
+    if (startPoint === -1 || endPoint === -1) {
+        throw "Cannot find comments '" + startPoint + "' or '" + endPointLiteral + "' in file " + filePath;
+    }
     var fileContentDict = {};
     eval("fileContentDict = {" + fileContent.slice(startPoint, endPoint) + "}");
     return fileContentDict;
