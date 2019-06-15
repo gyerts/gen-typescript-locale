@@ -2,7 +2,10 @@
 This is a little library for the translation of your phrases
 This library is the fastest one in whole libraries I have seen
 
-## Suggested file structure
+## Required file structure
+
+Required structure of `locale` folder, this folder may located anywhere you want
+
     src
         locale
             translates
@@ -75,10 +78,12 @@ Comments `// gen-typescript-locale start/end point` are required!
 ```json
 {
    "scripts": {
-      "gen_locale": "tsc && node ./src/locale/generate.js"
+      "gen_locale": "node ./node_modules/gen-typescript-locale --dist='./src/locale'"
    }
 }
 ```
+Parameter `--dist` should points to the folder `locale` with all files written in prev steps
+
 #### 5) generate code
 ```bash
 npm run gen_locale

@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "tsc",
-    "gen": "tsc && node dist/index.js && npm run clean"
+    "gen": "tsc && node dist/index.js"
   },
   "author": "Yuriy Gyerts",
   "license": "ISC",
