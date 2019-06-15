@@ -22,7 +22,7 @@
     "typescript": "^3.4.5"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/gyerts/gen-typescript-locale/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/gyerts/gen-typescript-locale"
 }

@@ -97,8 +97,11 @@ npm run gen_locale
 
 #### 6) Add usage somewhere in your application
 ```typescript
-import {_} from './src/locale'
+import {_, setLanguage} from './src/locale'
 
 _('January'); // returns 'January'
 _('Hello {name}', {name: 'Yuriy'}); // returns 'Hello Yuriy'
+
+setLanguage('russian');
+setLanguage('english');
 ```
