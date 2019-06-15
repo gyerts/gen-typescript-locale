@@ -10,7 +10,7 @@
     "gen": "tsc && node dist/index.js"
   },
   "author": "Yuriy Gyerts",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "fs": "0.0.1-security",
     "recursive-readdir": "^2.2.2"
