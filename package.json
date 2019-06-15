@@ -1,6 +1,6 @@
 {
   "name": "gen-typescript-locale",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
